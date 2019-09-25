@@ -1,0 +1,13 @@
+//exercício1 alert ("Olá mundo!")
+
+
+//exercício2  prompt (5+10)
+
+/*exercício3
+var ano = prompt("Digite seu ano de nascimento: ")
+alert 2019 - parseInt(ano)*/
+
+/*
+var media = (1 + 2 + 3) / 3;
+console.log(media);
+*/
