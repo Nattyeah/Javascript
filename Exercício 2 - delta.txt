@@ -1,0 +1,27 @@
+function calcDelta(a,b,c){
+  let delta = (b**2) - (4*a*c);
+  console.log('delta: ' + delta)
+  
+  return delta;
+}
+
+let valorDelta = calcDelta(1,5,4)
+
+
+function calcX1(a,b,delta){
+  let x1 = (-b + Math.sqrt(delta)) / (2*a);
+  console.log('x1 é: ' + x1)
+  
+  return calcDelta + x1;
+}
+
+calcX1(1,5,valorDelta)
+
+
+function calcX2(a,b,delta){
+    let x2 = (-b - Math.sqrt(delta)) / (2*a);
+    console.log('x2 é: ' + x2);
+   
+   return calcDelta + x2;
+}
+calcX2(1,5,valorDelta)

@@ -1,0 +1,19 @@
+function calcBpm(){
+    let minutosDia = 60 * 24;
+    let batidas = 70;
+  return minutosDia * batidas;
+}
+
+let resultadoBpm = calcBpm();
+//console.log(resultado);
+  
+function calcDiasVividos(idade){
+    
+  
+  return idade * 365;
+}
+
+let idade = prompt('Digite sua idade: ');
+let dias = calcDiasVividos(idade);
+//console.log(dias)
+console.log('Seu coração bateu: ' + resultadoBpm * dias + ' minutos')
