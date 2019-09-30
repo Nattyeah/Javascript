@@ -1,0 +1,45 @@
+*Nome em ordem alfabetica
+___________________________________
+function ordemAlfabetica(str){
+  let arr = str.split('');
+  let sorted = arr.sort();
+    return sorted.join('');
+  
+}
+
+console.log(ordemAlfabetica('nataly'));
+____________________________________
+
+*Retorna iniciais
+___________________________________
+function retornarIniciais(nameLastname){
+  let letra1 = nameLastname.substr(0,1);
+  
+  let posicao = nameLastname.indexOf(" ");
+  let letra2 = nameLastname.substr(posicao+1,1)
+       
+    return letra1 + letra2;
+}
+
+console.log(retornarIniciais("Nataly Lima"));
+___________________________________
+
+*Sorteio de bilhetes
+___________________________________
+function calcularBilhetes(quantidade){
+  let bilhete = Math.floor(Math.random() * quantidade);
+  return bilhete;
+}
+
+console.log(calcularBilhetes(420));
+___________________________________
+
+*Calculo IMC
+___________________________________
+function calcularImc(valor1, valor2){
+  let imc = valor1 / valor2**2;
+ return imc.toFixed();
+}
+
+ console.log(calcularImc(63, 1.63))
+___________________________________
