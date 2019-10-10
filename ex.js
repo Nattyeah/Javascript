@@ -83,7 +83,7 @@ let resultado = cartao.split('')
 let ultimoDigito = resultado.pop()
     resultado.reverse()
     resultado.forEach(function digitosImpares(digitos){
-let i = 0;
+        let i = 0;
         if(i % 2 === 1){
     return resultado[i] *= 2;
             }
