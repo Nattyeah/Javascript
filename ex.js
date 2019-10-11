@@ -78,15 +78,66 @@
 // 4) Some todos os números;
 // 5) O dígito verificador (aquele do passo 1) é o número que você precisa somar a todos os outros números somados pra obter um módulo 10.
 // 6) O cartão será válido se os números somados % 10 === 0.
-let cartao = "4532841148586221";
-let resultado = cartao.split('')
-let ultimoDigito = resultado.pop()
-    resultado.reverse()
-    resultado.forEach(function digitosImpares(digitos){
-        let i = 0;
-        if(i % 2 === 1){
-    return resultado[i] *= 2;
-            }
-        console.log(resultado)
-    })
-    
+// const cartao = "4532841148586221";
+
+// const resultado = cartao.split('')
+// const cartaoParcelado = cartao.map(function(i)
+//     {
+//     return parseInt(i)
+// })
+// const digitoVerificador = cartaoParcelado.pop()
+
+// cartaoParcelado.reverse()
+
+// const numerosMultiplicados = cartaoParcelado.map(function
+//     (i, indice){
+//     if (indice % 2 === 0) {
+//         i * 2
+//         if ( i > 9) {
+//             return i - 9
+//         }
+//         return i
+//     }
+//     return i;
+// })
+
+// const numeroFinal = numerosMultiplicados.reduce(function(acum, atual){
+//     return acum + atual
+// }, 0)
+
+// console.log(numeroFinal + digitoVerificador)
+
+// const pessoa = {
+//     nome: "Nataly",
+//     idade: 22,
+//     interesses: [musica, filmes],
+//     bio: function(){
+//         console.log('s{this.name} é legal')
+//     }
+// }
+// console.log(pessoa.idade)
+
+// imprimir lista de cores por gato, no formato
+// nome do gato
+//cor
+//-------------
+const magali = {
+    nome: 'Magali',
+    idade: 3, 
+    castrado: true,
+    cores: ['caramelo', 'branco']
+  };
+  
+const roberto = {
+    nome: 'Roberto',
+    idade: 1,
+    castrado: true,
+    cores: ['preto']
+  };
+const arrGatos = [magali, roberto]
+for (let gato of arrGatos) {
+    if (gato.castrado) {
+        console.log(gato.nome)
+        console.log(gato.cores)
+    }
+}
